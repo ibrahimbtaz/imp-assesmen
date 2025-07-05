@@ -1,0 +1,37 @@
+# Laravel
+imp-laravel/vendor/
+imp-laravel/node_modules/
+imp-laravel/.env
+imp-laravel/storage/*.key
+imp-laravel/storage/app/public/*
+imp-laravel/storage/framework/cache/*
+imp-laravel/storage/framework/sessions/*
+imp-laravel/storage/framework/testing/*
+imp-laravel/storage/framework/views/*
+imp-laravel/storage/logs/*
+imp-laravel/bootstrap/cache/*
+imp-laravel/public/hot
+imp-laravel/public/storage
+
+# Next.js
+imp-nextjs/.next/
+imp-nextjs/out/
+imp-nextjs/build/
+imp-nextjs/node_modules/
+imp-nextjs/.env*.local
+imp-nextjs/.vercel
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
