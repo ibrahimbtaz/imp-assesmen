@@ -48,7 +48,6 @@ Content-Type: application/json
 ```http
 DELETE /api/posts/1
 ```
-
 ## Next.js
 
 Next.js + Tailwind CSS + DaisyUI
@@ -132,5 +131,65 @@ export default function DeleteButton({ postId }) {
             {isDeleting ? 'Deleting...' : 'Delete'}
         </button>
     );
+}
+```
+
+
+---
+
+## Django
+
+### API Endpoints
+
+#### Authentication & User Management
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/signup/` | Register new user |
+| POST | `/api/auth/signin/` | Signin user |
+| GET | `/api/auth/profile/` | Get current user profile | 
+| PUT/PATCH | `/api/auth/profile/` | Update user profile |
+| DELETE | `/api/auth/profile/` | Delete user account |
+
+### Request/Response Examples
+
+#### Register New User
+```http
+POST /api/auth/signup/
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "email": "test@test.com",
+    "password": "strongpassword123"
+}
+```
+#### Signin User to Get Token
+```http
+POST /api/auth/signin/
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "strongpassword123"
+}
+```
+#### Get User Profile
+```http
+GET /api/auth/profile/
+Authorization: Token {your-auth-token}
+Accept: application/json
+```
+
+#### Update User Profile
+```http
+PUT /api/auth/profile/
+Authorization: Token {your-auth-token}
+Content-Type: application/json
+
+{
+    "username": "updateduser",
+    "email": "updated.updated@test.com",
+    "password": "strongpassword123" 
 }
 ```

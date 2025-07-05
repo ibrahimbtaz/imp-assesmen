@@ -21,6 +21,28 @@ imp-nextjs/node_modules/
 imp-nextjs/.env*.local
 imp-nextjs/.vercel
 
+# Django
+imp-django/*.pyc
+imp-django/__pycache__/
+imp-django/*/__pycache__/
+imp-django/*/*/__pycache__/
+imp-django/*/*/*/__pycache__/
+imp-django/.env
+imp-django/.venv/
+imp-django/venv/
+imp-django/venv-django/
+imp-django/env/
+imp-django/db.sqlite3
+imp-django/media/
+imp-django/staticfiles/
+imp-django/static/
+imp-django/.coverage
+imp-django/htmlcov/
+imp-django/.pytest_cache/
+imp-django/celerybeat-schedule
+imp-django/*.log
+imp-django/logs/
+
 # OS generated files
 .DS_Store
 .DS_Store?
